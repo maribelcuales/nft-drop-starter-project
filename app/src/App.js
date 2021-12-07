@@ -36,7 +36,15 @@ const App = () => {
     }
   };
   
-  const connectWallet = async () => {}; 
+  const connectWallet = async () => {
+    const { solana } = window;
+
+    if (solana) {
+      const response = await solana.connect();
+      console.log('Connected with Public Key:', response.publicKey.toString());
+      setWalletAddress(response.publicKey.toString());
+    }
+  }; 
 
   // Render this UI when the user hasn't connected their wallet to our app yet. 
   const renderNotConnectedContainer = () => (
