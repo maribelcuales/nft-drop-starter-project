@@ -1,5 +1,5 @@
 {
-  "name": "SAMURAI AND THE MOON",
+  "name": "SAMURAI_AND_THE_MOON",
   "symbol": "",
   "image": "0.png",
   "imageCredit": "Image by Yatheesh Gowda on Pixabay",
@@ -12,7 +12,7 @@
     ],
     "creators": [
       {
-        "address": "INSERT_CREATOR_WALLET_ADDRESS_HERE",
+        "address": "12fLMDRGTBpb4mg4Y2RYSDMNncCHmanfTqVbLsZPameo",
         "share": 100
       }
     ]

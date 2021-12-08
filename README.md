@@ -49,6 +49,7 @@ Commitment: confirmed
 ```
 7. Install _Metaplex CLI_
 8. Create the NFTs collection. 
+9. Deploy your NFTs to Solana's Devnet. 
 
 
 ### Questions?

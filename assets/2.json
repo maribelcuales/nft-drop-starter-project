@@ -1,5 +1,5 @@
 {
-  "name": "STAR CROSSED LOVERS",
+  "name": "STAR_CROSSED_LOVERS",
   "symbol": "",
   "image": "2.png",
   "imageCredit": "Image by Yatheesh Gowda on Pixabay",
@@ -12,7 +12,7 @@
     ],
     "creators": [
       {
-        "address": "INSERT_CREATOR_WALLET_ADDRESS_HERE",
+        "address": "12fLMDRGTBpb4mg4Y2RYSDMNncCHmanfTqVbLsZPameo",
         "share": 100
       }
     ]
