@@ -1,0 +1,20 @@
+{
+  "name": "STAR CROSSED LOVERS",
+  "symbol": "",
+  "image": "2.png",
+  "imageCredit": "Image by Yatheesh Gowda on Pixabay",
+  "properties": {
+    "files": [
+      {
+        "uri": "2.png",
+        "type": "image/png" 
+      }
+    ],
+    "creators": [
+      {
+        "address": "INSERT_CREATOR_WALLET_ADDRESS_HERE",
+        "share": 100
+      }
+    ]
+  }
+}

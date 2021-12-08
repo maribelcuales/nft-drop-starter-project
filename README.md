@@ -48,6 +48,7 @@ Keypair Path: /Users/flynn/.config/solana/id.json
 Commitment: confirmed
 ```
 7. Install _Metaplex CLI_
+8. Create the NFTs collection. 
 
 
 ### Questions?
