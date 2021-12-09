@@ -316,13 +316,16 @@ const CandyMachine = ({ walletAddress }) => {
   };
 
   return (
-    <div className="machine-container">
-      <p>Drop Date:</p>
-      <p>Items Minted:</p>
-      <button className="cta-button mint-button" onClick={mintToken}>
-        Mint NFT
-      </button>
-    </div>
+    // Only show this if machineStats is available 
+    machineStats && (
+      <div className="machine-container">
+        <p>{`Drop Date: ${machineStats.goLiveDateTimeString}`}</p>
+        <p>{`Items Minted: ${machineStats.itemsRedeemed} / ${machineStats.itemsAvailable}`}</p>
+        <button className="cta-button mint-button" onClick={mintToken}>
+          Mint NFT
+        </button>
+      </div>
+    )
   );
 };
 
