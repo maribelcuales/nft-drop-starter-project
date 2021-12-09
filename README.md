@@ -49,7 +49,8 @@ Commitment: confirmed
 ```
 7. Install _Metaplex CLI_
 8. Create the NFTs collection. 
-9. Deploy your NFTs to Solana's Devnet. 
+9. Deploy your NFTs to Solana's Devnet and upload to Arweave. 
+10. Verify NFTs.       
 
 
 ### Questions?
