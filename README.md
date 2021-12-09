@@ -11,7 +11,7 @@ To get started with this course, clone this repo and follow these commands:
 If you use VSCode to build your app, we included a list of suggested extensions that will help you build this project! Once you open this project in VSCode, you will see a popup asking if you want to download the recommended extensions :).
 
 ### My Notes:  
-1. Write code to connect _Phantom Wallet_ in `App.js`. 
+1. Set up the web app and build a connect function to the _Phantom Wallet_ in `App.js`. 
 2. Install the pre-reqs: 
 ```
 git version
@@ -50,7 +50,11 @@ Commitment: confirmed
 7. Install _Metaplex CLI_
 8. Create the NFTs collection. 
 9. Deploy your NFTs to Solana's Devnet and upload to Arweave. 
-10. Verify NFTs.       
+10. Verify NFTs. 
+11. Deploy candy machine to Metaplex's contract.
+12. Set drop date.
+13. Call your candy machine from your web app.
+14. Set up you .env variables and change the network to devnet in the Phantom wallet.      
 
 
 ### Questions?
