@@ -32,10 +32,21 @@
   margin: 0;
   font-size: 50px;
   font-weight: bold;
+  color: #ffafcc;
+}
+
+.emoji {
+  font-family: "Segoe UI Emoji";
+  color: #f72585;
 }
 
 .sub-text {
   font-size: 25px;
+  color: #ffff3f;
+}
+
+.mint {
+  color: #ffff3f;
 }
 
 .gradient-text {
@@ -64,11 +75,18 @@
   animation: gradient-animation 4s ease infinite;
 }
 
+.mint-button-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .mint-button {
   background: -webkit-linear-gradient(left, #4e44ce, #35aee2);
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
-  margin-left: 10px;
+  align-self: center;
+  margin-top: 10px;
+  width: 214px;
 }
 
 .footer-container {

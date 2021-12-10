@@ -72,13 +72,15 @@ const App = () => {
     <div className="App">
       <div className="container">
         <div className="header-container">
-          <p className="header">🍭 Candy Drop</p>
-          <p className="sub-text">NFT drop machine with fair mint</p>
+          <p className="header"><span class="emoji">🍭 </span> Candy Drop</p>
+          <p className="sub-text">NFT drop Machine with Fair <span class="mint">Mint</span></p>
           {/* Show condition below only if we don't have a wallet address */}
           {!walletAddress && renderNotConnectedContainer()}
         </div>
+        <div class="mint-button-container">
         {/* Check for walletAddress and then pass in walletAddress */}
-      {walletAddress && <CandyMachine walletAddress={window.solana} />}
+          {walletAddress && <CandyMachine walletAddress={window.solana} />}
+        </div>
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
           <a
