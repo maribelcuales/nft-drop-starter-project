@@ -32,7 +32,7 @@ const CandyMachine = ({ walletAddress }) => {
 
   // Add these two state properties 
   const [isMinting, setIsMinting] = useState(false); 
-  const [isLoadingMints, setLoadingMints] = useState(false);
+  const [isLoadingMints, setIsLoadingMints] = useState(false);
 
   // Actions
   const fetchHashTable = async (hash, metadataEnabled) => {
@@ -141,6 +141,8 @@ const CandyMachine = ({ walletAddress }) => {
       goLiveDateTimeString,
     });
 
+    setIsLoadingMints(true);
+
     const data = await fetchHashTable(
       process.env.REACT_APP_CANDY_MACHINE_ID,
       true 
@@ -159,6 +161,8 @@ const CandyMachine = ({ walletAddress }) => {
          }
        }
      }
+     // Remove Loading Flag 
+     setIsLoadingMints(false);
   };
 
   const getMetadata = async (mint) => {
@@ -369,16 +373,16 @@ const CandyMachine = ({ walletAddress }) => {
         <button 
           className="cta-button mint-button" 
           onClick={mintToken}
+          // Add this disabled state and have it listen to isMinting
           disabled={isMinting}
         >
           Mint NFT
         </button>
+        {isLoadingMints && <p>LOADING MINTS...</p>}
         {/* If we have mints available in our array, let's render some items */}
         {mints.length > 0 && renderMintedItems()}
       </div>
     )
-
-    
   );
 };
 
