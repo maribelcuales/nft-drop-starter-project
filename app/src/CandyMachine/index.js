@@ -27,6 +27,8 @@ const MAX_CREATOR_LEN = 32 + 1 + 1;
 const CandyMachine = ({ walletAddress }) => {
   // State property 
   const [machineStats, setMachineStats] = useState(null); 
+  // New state property 
+  const [mints, setMints] = useState([]);
 
   // Actions
   const fetchHashTable = async (hash, metadataEnabled) => {
@@ -127,13 +129,32 @@ const CandyMachine = ({ walletAddress }) => {
       goLiveDateTimeString,
     });
 
-    console.log({
+    console.log({ 
       itemsAvailable,
       itemsRedeemed,
       itemsRemaining,
       goLiveData,
       goLiveDateTimeString,
     });
+
+    const data = await fetchHashTable(
+      process.env.REACT_APP_CANDY_MACHINE_ID,
+      true 
+     );
+
+     if(data.length !== 0) {
+       for (const mint of data) {
+         // Get URI
+         const response = await fetch(mint.data.uri);
+         const parse = await response.json();
+         console.log("Past Minted NFT, mint")
+
+         // Get image URI 
+         if(!mints.find((mint) => mint === parse.image)) {
+           setMints((prevState) => [...prevState, parse.image]);
+         }
+       }
+     }
   };
 
   const getMetadata = async (mint) => {
