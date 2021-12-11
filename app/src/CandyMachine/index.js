@@ -258,6 +258,7 @@ const CandyMachine = ({ walletAddress }) => {
             const { result } = notification;
             if (!result.err) {
               console.log('NFT Minted!');
+              await getCandyMachineState(); 
             }
           }
         },
