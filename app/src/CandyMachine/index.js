@@ -387,8 +387,8 @@ const CandyMachine = ({ walletAddress }) => {
     machineStats && (
       <div className="machine-container">
         {renderDropTimer()}
-        <p>{`Drop Date: ${machineStats.goLiveDateTimeString}`}</p>
-        <p>{`Items Minted: ${machineStats.itemsRedeemed} / ${machineStats.itemsAvailable}`}</p>
+        <p className="drop-date">{`Drop Date: ${machineStats.goLiveDateTimeString}`}</p>
+        <p className="mint-items">{`Items Minted: ${machineStats.itemsRedeemed} / ${machineStats.itemsAvailable}`}</p>
         {/* Check to see if these properties are equal! */}
         {machineStats.itemsRedeemed === machineStats.itemsAvailable ? (
           <p className="sub-text">Sold Out 🙊</p>
