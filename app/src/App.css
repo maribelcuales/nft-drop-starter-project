@@ -15,6 +15,11 @@
   color: white;
   position: relative;
   /* background-color: #35aee2; */
+  background-image: url('./assets/outer-space.jpg');
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .authed-container {
@@ -32,12 +37,13 @@
   margin: 0;
   font-size: 50px;
   font-weight: bold;
-  color: #ffafcc;
+  color: #ff8800;
+  /* color: -webkit-linear-gradient(left, #ff8867, #ff52ff); */
 }
 
 .emoji {
   font-family: "Segoe UI Emoji";
-  color: #f72585;
+  color: #ffff3f;  
 }
 
 .sub-text {

@@ -72,7 +72,7 @@ const App = () => {
     <div className="App">
       <div className="container">
         <div className="header-container">
-          <p className="header"><span class="emoji">🍭 </span> Candy Drop</p>
+          <p className="header"><span class="emoji">🌠</span> Solana NFT Drop</p>
           <p className="sub-text">NFT drop Machine with Fair <span class="mint">Mint</span></p>
           {/* Show condition below only if we don't have a wallet address */}
           {!walletAddress && renderNotConnectedContainer()}
